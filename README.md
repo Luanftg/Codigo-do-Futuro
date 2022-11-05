@@ -4,7 +4,7 @@ Repositório utilizado para as anotações de aulas, exercícios e desafios do p
 
 ## Aulas
 
-- [ ] Aula 01 - Iniciação ao JavaScript
+- [x] Aula 01 - Iniciação ao JavaScript
   - [x] [Tipos de dados em JavaScript](https://www.w3schools.com/js/js_datatypes.asp)
   - [x] `alert`
   - [x] `prompt`
