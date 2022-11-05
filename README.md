@@ -19,5 +19,5 @@ Repositório utilizado para as anotações de aulas, exercícios e desafios do p
 
 ### :star: Material EXTRA
 
-[Torne-se um Programador - GIT](https://www.torneseumprogramador.com.br/aula?id=JiyKMqVfP1M&aula=20&tipo=back-end&professor=Danilo)
-[Torne-se um Programador - Variáveis JS](https://www.torneseumprogramador.com.br/aula?id=UT4uuKeja68&aula=2&tipo=iniciante&professor=Danilo)
+- [Torne-se um Programador - GIT](https://www.torneseumprogramador.com.br/aula?id=JiyKMqVfP1M&aula=20&tipo=back-end&professor=Danilo)
+- [Torne-se um Programador - Variáveis JS](https://www.torneseumprogramador.com.br/aula?id=UT4uuKeja68&aula=2&tipo=iniciante&professor=Danilo)
