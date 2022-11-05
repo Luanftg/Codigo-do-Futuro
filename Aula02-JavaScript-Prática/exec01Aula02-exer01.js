@@ -5,6 +5,6 @@
  var T = Number(prompt('Informe o número T'));
  var o = Number(prompt('Informe o número o'));
  
- var result  = y +5 *9/7 + (h-t/T+o) -5*100
+ var result  = y +5 *9/7 + (h-t/T+o) -5*100;
 
  alert(result);
