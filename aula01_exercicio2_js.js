@@ -1,7 +1,7 @@
 var name = prompt("Informe o nome do cliente");
-var alvejante = prompt("Informe o preço do Alvejante");
-var sabaoEmPo = prompt("Informe o preço do Sabão em pó");
-var sabonete = prompt("Informe o preço do Sabonete");
+var alvejante = parseFloat(prompt("Informe o preço do Alvejante"));
+var sabaoEmPo = parseFloat(prompt("Informe o preço do Sabão em pó"));
+var sabonete = parseFloat(prompt("Informe o preço do Sabonete"));
 
 var result = alvejante + sabaoEmPo + sabonete;
 
