@@ -1,6 +1,7 @@
-const farmacias = [{
+const stores = [{
         id: 1,
-        nome: "Drogarias Ultra Popular",
+        nome: "Ultra Popular",
+        categoria: "Drogaria",
         numeroDeLojas: 800,
         cidadesPresentes: 590,
         foco: "padronização da comunicação visual",
@@ -8,7 +9,8 @@ const farmacias = [{
     },
     {
         id: 2,
-        nome: "Farmácia Super Popular",
+        nome: "Super Popular",
+        categoria: "Farmácia",
         numeroDeLojas: 30,
         cidadesPresentes: 2,
         foco: "padronização da comunicação visual",
@@ -16,20 +18,22 @@ const farmacias = [{
     },
     {
         id: 3,
-        nome: "Drogaria Maxi Popular",
+        nome: "Maxi Popular",
+        categoria: "Drogaria",
         numeroDeLojas: 80,
         cidadesPresentes: 800,
         foco: "padronização da comunicação visual",
         site: "https://www.maxipopular.com.br/"
     },
     {
-        id: 1,
-        nome: "Rede Entrefarma",
+        id: 4,
+        nome: "Entrefarma",
+        categoria: "Rede",
         numeroDeLojas: 100,
         cidadesPresentes: 70,
         foco: "padronização da comunicação visual",
         site: "https://www.entrefarma.com.br/"
-    },
+    }
 ];
 
-module.exports = farmacias;
+module.exports = stores;
