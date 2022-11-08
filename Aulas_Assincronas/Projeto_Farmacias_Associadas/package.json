@@ -1,0 +1,28 @@
+{
+    "name": "aulas_assincronas",
+    "version": "1.0.0",
+    "description": "Projeto teste da trilha de revisão da linguagem JAvaScript",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Luanftg/Codigo-do-Futuro.git"
+    },
+    "keywords": [
+        "JavaScript",
+        "Farmarcas",
+        "codigo-do-futuro"
+    ],
+    "author": "Luan Fonseca",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Luanftg/Codigo-do-Futuro/issues"
+    },
+    "homepage": "https://github.com/Luanftg/Codigo-do-Futuro#readme",
+    "dependencies": {
+        "readline-sync": "^1.4.10"
+    }
+}
