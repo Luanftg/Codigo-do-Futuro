@@ -43,10 +43,12 @@ Repositório utilizado para as anotações de aulas, exercícios e desafios do p
 - [x] `continue` = retorna para o teste lógico do loop
 - [x] `break` = interrompe a iteração
 - **Coleções**
-- [ ] `array [ ]`
-  - [ ] `.push()` = função que adiciona um item ao array.
-  - [ ] `.pop()` = remove o último elemento do array
-- [ ] Objeto Literal = sem tipagem (dinâmico)
+- [x] `array [ ]`
+  - [x] `.push()` = função que adiciona um item ao array.
+  - [x] `.pop()` = remove o último elemento do array
+- [x] Objeto Literal = sem tipagem (dinâmico)
+
+### Aula 04 - Orientação a Objetos
 
 
 #### Referências
