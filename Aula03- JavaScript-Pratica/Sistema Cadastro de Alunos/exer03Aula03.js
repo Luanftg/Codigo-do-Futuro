@@ -24,6 +24,7 @@ class Aluno {
     matricula;
     notas = [];
     media;
+    status;
 }
 
 var menu;
@@ -56,7 +57,7 @@ function cadastrarAluno() {
     aluno.matricula = prompt('Informe a matrícula');
     let nota= 0.0;
     do {
-        nota = Number(prompt('Informe a nota do aluno'));
+        nota = Number(prompt('Informe a nota do aluno. Digite uma nota negativa para parar de lançar notas'));
         if (nota >=0)  aluno.notas.push(nota);
     } while (nota > 0);
 
@@ -68,12 +69,13 @@ function exibirRelatorio() {
     for(let i = 0; i < listaDeAlunos.length; i++) {
        
        var media = listaDeAlunos[i].notas.reduce((proximo, atual)=> proximo+atual) / listaDeAlunos[i].notas.length;
+       listaDeAlunos[i].media = media;
        if(media >= 7) {
-        listaDeAlunos[i].media = 'Aprovado';
+        listaDeAlunos[i].status = 'Aprovado';
        } else if ( media > 5 && media <7) {
-        listaDeAlunos[i].media = 'Recuperação';
+        listaDeAlunos[i].status = 'Recuperação';
        }else {
-        listaDeAlunos[i].media = 'Reprovado';
+        listaDeAlunos[i].status = 'Reprovado';
        }
     }
     
@@ -82,6 +84,7 @@ function exibirRelatorio() {
     matrícula: ${aluno.matricula}
     notas: ${aluno.notas}
     media: ${aluno.media}
+    status: ${aluno.status}
     `));
 
 }
