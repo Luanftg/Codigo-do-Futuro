@@ -50,11 +50,11 @@ Repositório utilizado para as anotações de aulas, exercícios e desafios do p
 
 ### Aula 04 - Orientação a Objetos
 
-
 #### Referências
 
 - [Link da Aula pelo Zoom](https://us06web.zoom.us/j/81578411525)
 - [Professor - Danilo Aparecido](https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAAce0SUBo-evw_-UTiCDvRgyEhMratZT51A&keywords=danilo%20aparecido%20dos%20santos&origin=RICH_QUERY_SUGGESTION&position=0&searchId=ce8d26d2-4dca-4800-a1d2-a0dd65fdf5d3&sid=nkG)
+- [Repositório - Código do Futuro](https://github.com/torneseumprogramador/codigo-do-futuro-js)
 
 ### :star: Materiais EXTRAS
 
@@ -65,3 +65,6 @@ Repositório utilizado para as anotações de aulas, exercícios e desafios do p
 - [Torne-se um Programador](https://www.torneseumprogramador.com.br/aulas/danilo/javascript?page=1)
 - **Aula 03**
 - [W3School - JavaScript Statements](https://www.w3schools.com/jsref/jsref_statements.asp)
+- **Aula04**
+[Torne-se um Programador - DOTNET](https://www.torneseumprogramador.com.br/aulas/c-sharp?page=8)
+[Projeto - Angular](https://github.com/torneseumprogramador/app-cms-tornese-comunidade)
