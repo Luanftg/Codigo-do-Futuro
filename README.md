@@ -24,7 +24,9 @@ Repositório utilizado para as anotações de aulas, exercícios e desafios do p
 - [x] operadores aritiméticos  (`+` , `-` , `*`, `/`, `%`)
 - [x] operadores de comparação (`==`, `>`, `<`, `>=`, `<=`, `===`)
 
-### Aula 03 - Prática de JavaScript [08-11/2022] [Código do Futuro - Aula 03](https://storage.gama.academy/R6SDonDwxGjdGsg76UAxVSJ3a15zQQzz9zpWDt79X6CF7)
+### Aula 03 - Prática de JavaScript [08-11/2022]
+
+**Link da VideoAula:** [Código do Futuro - Aula 03](https://storage.gama.academy/R6SDonDwxGjdGsg76UAxVSJ3a15zQQzz9zpWDt79X6CF7)
 
 - **Condicionais**
 - [x] ``if / else``
@@ -50,6 +52,14 @@ Repositório utilizado para as anotações de aulas, exercícios e desafios do p
 
 ### Aula 04 - Orientação a Objetos
 
+### Aula 05 - Angular
+
+- É um *framework* compelto ! 
+- Uma parceria **Google** e **Microsoft**
+
+[WordPad - comandos Angular](https://wordpad.cc/codigo-do-futuro-angular
+)
+
 #### Referências
 
 - [Link da Aula pelo Zoom](https://us06web.zoom.us/j/81578411525)
@@ -66,5 +76,14 @@ Repositório utilizado para as anotações de aulas, exercícios e desafios do p
 - **Aula 03**
 - [W3School - JavaScript Statements](https://www.w3schools.com/jsref/jsref_statements.asp)
 - **Aula04**
-[Torne-se um Programador - DOTNET](https://www.torneseumprogramador.com.br/aulas/c-sharp?page=8)
-[Projeto - Angular](https://github.com/torneseumprogramador/app-cms-tornese-comunidade)
+- [Torne-se um Programador - DOTNET](https://www.torneseumprogramador.com.br/aulas/c-sharp?page=8)
+- [Projeto - Angular](https://github.com/torneseumprogramador/app-cms-tornese-comunidade)
+- [Angular - Página Oficial](https://angular.io/cli)
+- [TypeScript - Página oficial](https://www.typescriptlang.org/)
+- **Aula05**
+- [Torne-se um programador- CSS Sass](https://www.torneseumprogramador.com.br/busca?q=sass)
+- [Repositório npm para Angular](https://www.npmjs.com/)
+- [Geradort de gitignore - gitignoreIO](https://www.toptal.com/developers/gitignore)
+- [Torne-se um programador - Grunt](https://www.torneseumprogramador.com.br/aula?id=oIm_wrdDCIw&aula=77&tipo=front-end&professor=Danilo)
+- [Torne-se um programador - Gult](https://www.torneseumprogramador.com.br/aula?id=2qTZrRa2kEU&aula=78&tipo=front-end&professor=Danilo)
+- [Loiane - Angular](https://www.youtube.com/watch?v=tPOMG0D57S0)
