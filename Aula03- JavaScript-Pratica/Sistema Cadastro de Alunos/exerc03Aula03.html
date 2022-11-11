@@ -6,9 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 03 - Sistema de Cadastro de alunos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <h1>Bem vindo ao programa de alunos</h1>
+
+    <button onClick="appNotas.mostrarFormAluno()">Cadastrar Aluno</button>
+    <button onClick="appNotas.mostrarListaAlunos()">Listar Alunos</button>
+
+    <form id="formCadastroAluno" style="display: none;">
+
+        <label for="nome">Nome do Aluno:</label><br>
+        <input type="text" id="nome" , name="nome" /><br>
+        <label for="matricula">N° de matrícula:</label><br>
+        <input type="text" id="matricula" /><br>
+        <label for="appNotas.notas">Notas - separadas por vírgula</label><br>
+        <input type="text" id="notas" /><br><br>
+        <button type="button" onclick="appNotas.cadastrarAluno()">Cadastrar</button>
+
+
+    </form>
+
+
+    <table id="listaAlunos">
+        <thead id="thead">
+
+            <tr>
+                <th>Aluno</th>
+                <th>Matrícula</th>
+                <th>Notas</th>
+                <th>Média</th>
+                <th>Situação</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody">
+            <tr>
+                <td>Carregando...</td>
+                <td>Carregando...</td>
+                <td>Carregando...</td>
+                <td>Carregando...</td>
+                <td>Carregando...</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
     <script src="exer03Aula03.js"></script>
 </body>
 
