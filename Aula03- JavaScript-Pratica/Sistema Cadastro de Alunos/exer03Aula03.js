@@ -17,74 +17,93 @@
  * se a nora for menor que 5 Reprovado
  */
 
-var listaDeAlunos = [];
+
+
+
+const appNotas = {};
+// appNotas.nome = document.getElementById("nome").value;
+// appNotas.matricula = document.getElementById("matricula").value;
+// appNotas.notas = document.getElementById("notas").value;
+// appNotas.formCadastroAluno = document.getElementById("formCadastroAluno");
+// appNotas.listaAlunos = document.getElementById("listaAlunos");
+
 
 class Aluno {
-    nome;
-    matricula;
-    notas = [];
-    media;
-    status;
-}
-
-var menu;
-do {
-    menu = parseInt(prompt(`
-    Bem vindo ao Sistema de gerenciamento de alunos!
-    Digite uma opção válida:
-    0- Sair.
-    1- Cadastrar um aluno.
-    2- Exibir relatório de alunos.
-    `));
-    if(menu == 0) {
-        break;
-    } else if (menu ==1) {
-        cadastrarAluno();
-        menu = 4;
-    } else if (menu ==2) {
-        exibirRelatorio();
-        menu =4;
+    constructor() {
+        this.nome = '';
+        this.matricula = '';
+        this.notas = [];
     }
-   
-    
-    
-} while(menu < 0 || menu > 3 );
 
-
-function cadastrarAluno() {
-    var aluno = new Aluno();
-    aluno.nome = prompt('Informe o nome do aluno');
-    aluno.matricula = prompt('Informe a matrícula');
-    let nota= 0.0;
-    do {
-        nota = Number(prompt('Informe a nota do aluno. Digite uma nota negativa para parar de lançar notas'));
-        if (nota >=0)  aluno.notas.push(nota);
-    } while (nota > 0);
-
-    listaDeAlunos.push(aluno);
-}
-
-function exibirRelatorio() {
-
-    for(let i = 0; i < listaDeAlunos.length; i++) {
-       
-       var media = listaDeAlunos[i].notas.reduce((proximo, atual)=> proximo+atual) / listaDeAlunos[i].notas.length;
-       listaDeAlunos[i].media = media;
-       if(media >= 7) {
-        listaDeAlunos[i].status = 'Aprovado';
-       } else if ( media > 5 && media <7) {
-        listaDeAlunos[i].status = 'Recuperação';
-       }else {
-        listaDeAlunos[i].status = 'Reprovado';
-       }
+    somaDasNotas() {
+        return this.notas.reduce((atual, proximo) => atual + proximo);
     }
     
-    listaDeAlunos.forEach((aluno)=> alert(`
-    nome do aluno: ${aluno.nome}
-    matrícula: ${aluno.matricula}
-    notas: ${aluno.notas}
-    media: ${aluno.media}
-    status: ${aluno.status}
-    `));
+    media() {
+        return (this.somaDasNotas() / this.notas.length).toFixed(2);
+    }
 
+    situacao() {
+        const mediaCalculada = this.media();
+        if(mediaCalculada >= 7) return 'Aprovado';
+        if (mediaCalculada > 5 && mediaCalculada <7) return 'Recuperação';
+        return 'Reprovado';
+    }
+    
+}
+
+
+appNotas.listaDeAlunos = [];
+
+appNotas.cadastrarAluno = () => {
+    const aluno = new Aluno();
+    
+    aluno.nome = document.getElementById("nome").value;
+    aluno.matricula = document.getElementById("matricula").value;
+    aluno.notas = document.getElementById('notas').value.split(',');
+    for(let i=0; i<aluno.notas.length;i++) {
+        aluno.notas[i] = Number(aluno.notas[i]);
+    }
+    appNotas.listaDeAlunos.push(aluno);
+    appNotas.esconderFormAluno();
+    appNotas.mostrarAlunos();
+}
+
+appNotas.exibirRelatorio = () => {
+    appNotas.listaDeAlunos.forEach(mostrarAlunos());
+}
+
+
+appNotas.mostrarAlunos = () => {
+    let linhasHTML = "";
+    for (let index = 0; index < appNotas.listaDeAlunos.length; index++) {
+        let aluno = appNotas.listaDeAlunos[index];
+        linhasHTML += `
+            <tr>
+                <td>${aluno.nome}</td>
+                <td>${aluno.matricula}</td>
+                <td>${aluno.notas.join(',')}</td>
+                <td>${aluno.media()}</td>
+                <td>${aluno.situacao()}</td>
+            </tr>
+        `
+    }
+
+    document.getElementById("tbody").innerHTML = linhasHTML;
+}
+
+
+appNotas.mostrarFormAluno = () => {
+    formCadastroAluno.style.display = "block";
+    appNotas.esconderListaAlunos();
+}
+appNotas.esconderFormAluno = () => {
+    formCadastroAluno.style.display = "none";
+    appNotas.mostrarListaAlunos();
+}
+appNotas.mostrarListaAlunos = () => {
+    document.getElementById("listaAlunos").style.display = "block";
+}
+appNotas.esconderListaAlunos = () => {
+    document.getElementById("listaAlunos").style.display = "none";
 }
